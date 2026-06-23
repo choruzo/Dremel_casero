@@ -148,3 +148,42 @@ tuerca de contratuerca, o una gota de fijador de roscas.
 - `adaptador_vista_previa.png` — render exterior + sección.
 - `adaptador_inserto_M2_cortes.png` — cortes de verificación del prisionero.
 - `Imagen_motor.png`, `Imagen_motor1.png` — fotos/specs del motor XD-3420.
+
+---
+
+## 10. Soporte: empuñadura + base (2 en 1)
+
+Medidas del motor (calibre del usuario): cuerpo **Ø51 mm × 71 mm**, brida con 2
+espárragos **M4 a ~40 mm** (aprox).
+
+**Empuñadura** (`empunadura.stl` / `.scad`):
+- Mango tipo barril con **abrazadera (clamp en C)**: aprieta el cuerpo Ø51 con
+  **1 tornillo M4 (~30 mm) + 1 tuerca M4** (tuerca cautiva en la orejeta).
+- OD ~58 mm, longitud 60 mm. **Cola de milano** inferior para el dock.
+- Imprimir de pie, sin soportes.
+
+**Base** (`base.stl` / `.scad`) — uso **horizontal** (tipo pulidora):
+- **Cuna + cola de milano hembra**: la empuñadura desliza desde el frente hasta el
+  tope trasero; **detente** de retención en el frente (sin herramientas).
+- **Bandeja superior** para el regulador PWM (se abre por arriba → imprimible sin
+  soportes). **Medidas del hueco PROVISIONALES** (REG_W 54 × REG_H 36 × REG_Yd 40):
+  ajustar con las medidas reales del regulador.
+- **Canal de cable Ø10** de la bandeja hacia el motor.
+- Pieza grande: imprimir con **relleno 12–15 %**.
+
+### Cambios
+- **v0.5** — Añadidos empuñadura (clamp M4 + cola de milano) y base horizontal con
+  dock de cola de milano + bandeja para regulador (provisional) + canal de cable.
+
+### Pendiente soporte
+- [ ] Medidas reales del regulador PWM (ancho × alto × fondo, mando, display, fijación).
+- [ ] Validar agarre del clamp M4 y ajuste de la cola de milano tras imprimir.
+- [ ] (Opcional) Tapa para la bandeja del regulador; lastre/pie antideslizante.
+- **v0.6** — Empuñadura validada impresa (medidas OK). Bandeja del regulador ajustada
+  a medidas reales: placa ~40×30, mando Ø20 (muesca en pared trasera), comp. ~13 mm;
+  cavidad 44×34×20 mm con bajada de cable al canal hacia el motor.
+- **v0.7** — Añadida TAPA para la bandeja del regulador (`tapa.stl`/`.scad`): plancha
+  70×42×3 con 4 avellanados M2 y muesca para el cable de alimentación. La base
+  incorpora 4 alojamientos de **inserto M2** (Ø3, prof. 4) en el borde de las paredes;
+  fijación con tornillo **M2×4 avellanado**. Recordatorio Bambu: exportar STL desde
+  OpenSCAD (`openscad -o pieza.stl pieza.scad`) para evitar el relleno de huecos.

@@ -56,3 +56,23 @@ OpenSCAD) y exporta el STL con **F6 → Export as STL**. Ajustes más útiles:
 - `INSERT_HOLE_D` — agarre del inserto M2 (2,9–3,1).
 
 📄 Detalles completos y registro de cambios en **[`HISTORICO_proyecto.md`](HISTORICO_proyecto.md)**.
+
+---
+
+## Soporte (empuñadura + base 2 en 1)
+
+| Archivo | Qué es |
+|---|---|
+| `empunadura.stl` / `.scad` | Mango con abrazadera M4 + cola de milano |
+| `base.stl` / `.scad` | Base horizontal con dock + bandeja del regulador |
+| `empunadura_vista.png`, `base_vista.png` | Renders |
+
+- **Empuñadura:** aprieta el motor con 1× M4 (~30 mm) + 1× tuerca M4. Imprimir de pie.
+- **Base:** la empuñadura desliza por la cola de milano hasta el tope. Bandeja superior
+  para el regulador (medidas **provisionales**, ajustar). Imprimir con relleno 12–15 %.
+
+- **Tapa del regulador** (`tapa.stl` / `.scad`): se atornilla a la base con 4× inserto
+  M2 + tornillo M2×4 avellanado. Imprimir plana. La base ya trae los 4 alojamientos de inserto.
+
+> Si Bambu rellena los huecos al importar mi STL, genera el STL desde OpenSCAD:
+> `openscad -o base.stl base.scad`
